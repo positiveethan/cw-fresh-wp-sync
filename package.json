@@ -1,0 +1,26 @@
+{
+  "name": "cw-fresh-wp-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/positiveethan/cw-fresh-wp-sync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/positiveethan/cw-fresh-wp-sync/issues"
+  },
+  "homepage": "https://github.com/positiveethan/cw-fresh-wp-sync#readme",
+  "dependencies": {
+    "dotenv": "^16.6.0",
+    "node-fetch": "^2.7.0",
+    "xml2js": "^0.6.2"
+  }
+}
