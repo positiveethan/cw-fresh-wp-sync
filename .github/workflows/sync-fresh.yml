@@ -8,6 +8,7 @@ on:
 jobs:
   run-sync:
     runs-on: ubuntu-latest
+    environment: env
 
     steps:
       - name: 📥 Checkout repo
