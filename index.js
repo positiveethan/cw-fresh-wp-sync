@@ -1,7 +1,5 @@
 import fetch from 'node-fetch';
 import { parseStringPromise } from 'xml2js';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const rss = 'https://christianityworks.com/wp-content/plugins/bb-rss-mailchimp/feeds/fresh-unbranded.xml';
 const WP_API_BASE = process.env.WP_API_URL; // e.g. https://dev.thelight.com.au/wp-json
