@@ -1,7 +1,5 @@
 import fetch from 'node-fetch';
 import { parseStringPromise } from 'xml2js';
-import path from 'path';
-import { URL } from 'url';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -99,6 +97,12 @@ async function createPost(data, featuredMediaId) {
 
 async function main() {
   try {
+    console.log('Environment ready:', {
+      WP_API_URL: !!process.env.WP_API_URL,
+      WP_USER: !!process.env.WP_USER,
+      WP_APP_PASSWORD: !!process.env.WP_APP_PASSWORD,
+    });
+
     const item = await fetchRSS();
     console.log('Fetched item:', item.title);
 
