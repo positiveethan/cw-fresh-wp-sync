@@ -76,7 +76,7 @@ async function createPost(data, featuredMediaId) {
       featured_media: featuredMediaId,
       date: data.pubDate,
       excerpt: data.scriptureQuote,
-      categories: [142], // ✅ Add to category ID 142
+      categories: [199], // ✅ Add to category ID 199
       meta: {
         scripture_reference: data.scriptureReference,
       },
