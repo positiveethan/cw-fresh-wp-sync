@@ -24,7 +24,6 @@ async function fetchRSS() {
     link: item.link[0],
     author: item.author?.[0] ?? 'Unknown',
     description: item.description[0],
-    pubDate: new Date(item.pubDate[0]).toISOString(),
     imageUrl: item['media:content']?.find(m => m.medium?.[0] === 'image')?.url?.[0],
     categories: item.category || [],
     scriptureReference: item['fresh:scriptureReference']?.[0],
@@ -74,7 +73,6 @@ async function createPost(data, featuredMediaId) {
       content: data.description,
       status: 'publish',
       featured_media: featuredMediaId,
-      date: data.pubDate,
       excerpt: data.scriptureQuote,
       categories: [199], // ✅ Add to category ID 199
       meta: {
